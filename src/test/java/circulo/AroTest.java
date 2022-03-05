@@ -17,26 +17,29 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class AroTest {
     
+    /**
+     *
+     */
     public AroTest() {
     }
     
     /**
-     * Test of setX method, of class Aro.
+     * Test del método setCoordenadaX, de la clase Aro.
      */
     @Test
-    public void testEstablecerX() {
-        System.out.println("establecerX");
+    public void testsetCoordenadaX() {
+        System.out.println("setCoordenadaX");
         int valorX = 0;
         Aro instance = new Aro();
         instance.setCoordenadaX(valorX);
     }
 
     /**
-     * Test of getCoordenadaX method, of class Aro.
+     * Test del método getCoordenadaX, de la clase Aro.
      */
     @Test
     public void testgetCoordenadaX() {
-        System.out.println("obterX");
+        System.out.println("getCoordenadaX");
         Aro instance = new Aro(0,0,0.1);
         int expResult = 0;
         int result = instance.getCoordenadaX();
@@ -44,22 +47,22 @@ public class AroTest {
     }
 
     /**
-     * Test of setCoordenadaY method, of class Aro.
+     * Test del método setCoordenadaY, de la clase Aro.
      */
     @Test
-    public void testEstablecerY() {
-        System.out.println("establecerY");
+    public void testsetCoordenadaY() {
+        System.out.println("setCoordenadaY");
         int valorY = 0;
         Aro instance = new Aro();
         instance.setCoordenadaY(valorY);
     }
 
     /**
-     * Test of getCoordenadaY method, of class Aro.
+     * Test del método getCoordenadaY, de la clase Aro.
      */
     @Test
     public void testgetCoordenadaY() {
-        System.out.println("obterY");
+        System.out.println("getCoordenadaY");
         Aro instance = new Aro(0,0,0.1);
         int expResult = 0;
         int result = instance.getCoordenadaY();
@@ -67,11 +70,11 @@ public class AroTest {
     }
 
     /**
-     * Test of setRadio method, of class Aro.
+     * Test del método setRadio, de la clase Aro.
      */
     @Test
-    public void testEstablecerRadio() {
-        System.out.println("establecerRadio");
+    public void testsetRadio() {
+        System.out.println("setRadio");
         Aro instance = new Aro();
         instance.setRadio(0.0);
         instance.setRadio(0.1);
@@ -79,7 +82,7 @@ public class AroTest {
     }
 
     /**
-     * Test of getRadio method, of class Aro.
+     * Test del método GetRadio, de la clase Aro.
      */
     @Test
     public void testGetRadio() {
@@ -98,7 +101,7 @@ public class AroTest {
     }
 
     /**
-     * Test of obterDiametro method, of class Aro.
+     * Test del método ObterDiametro, de la clase Aro.
      */
     @Test
     public void testObterDiametro() {
@@ -109,7 +112,7 @@ public class AroTest {
     }
 
     /**
-     * Test of obterCircunferencia method, of class Aro.
+     * Test del método ObterCircunferencia, de la clase Aro.
      */
     @Test
     public void testObterCircunferencia() {
@@ -121,11 +124,11 @@ public class AroTest {
     }
 
     /**
-     * Test of obterSuperficie method, of class Aro.
+     * Test del método ObterSuperficie, de la clase Aro.
      */
     @Test
     public void testObterSuperficie() {
-        System.out.println("obterArea");
+        System.out.println("ObterSuperficie");
         Aro instance = new Aro(0,0,0.1);
         double expResult = 0.0314159;
         double result = instance.obterSuperficie();
@@ -133,7 +136,7 @@ public class AroTest {
     }
 
     /**
-     * Test of trasladarCentro method, of class Aro.
+     * Test del método TrasladarCentro, de la clase Aro.
      */
     @Test
     public void testTrasladarCentro() {

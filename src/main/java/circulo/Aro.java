@@ -7,15 +7,28 @@ package circulo;
 public class Aro {
 
     private static final double LIMITERADIO = 0.0;
+
+    /**
+     *
+     */
     public static final double MINIMO = LIMITERADIO;
 
     private int coordenadaX;
     private int coordenadaY;
     private double radio;
 
+    /**
+     *
+     */
     public Aro() {
     }
 
+    /**
+     *
+     * @param valorX
+     * @param valorY
+     * @param valorRadio
+     */
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
@@ -23,55 +36,67 @@ public class Aro {
     }
     
     /**
-     * @return the coordenadaX
+     * @return obtener coordenadaX
      */
     public int getCoordenadaX() {
         return coordenadaX;
     }
 
     /**
-     * @param coordenadaX the coordenadaX to set
+     * @param coordenadaX establecido
      */
     public void setCoordenadaX(int coordenadaX) {
         this.coordenadaX = coordenadaX;
     }
 
     /**
-     * @return the coordenadaY
+     * @return obtener coordenadaY
      */
     public int getCoordenadaY() {
         return coordenadaY;
     }
 
     /**
-     * @param coordenadaY the coordenadaY to set
+     * @param coordenadaY testablecido
      */
     public void setCoordenadaY(int coordenadaY) {
         this.coordenadaY = coordenadaY;
     }
 
     /**
-     * @return the radio
+     * @return obtener radio
      */
     public double getRadio() {
         return radio;
     }
 
     /**
-     * @param radio the radio to set
+     * @param radio establecido
      */
     public void setRadio(double radio) {
         this.radio = radio;
     }
 
+    /**
+     *
+     * @return devuelve el diametro del circulo
+     */
     public double obterDiametro() {
         return getRadio() * 2;
     }
 
+    /**
+     *
+     * @return devuelve el valor de la circunferencia
+     */
     public double obterCircunferencia() {
         return Math.PI * obterDiametro();
     }
 
+    /**
+     *
+     * @return devuelve la superficie del circulo
+     */
     public double obterSuperficie() {
         return Math.PI * getRadio() * getRadio();
     }
@@ -81,6 +106,11 @@ public class Aro {
         return "Centro = [" + getCoordenadaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
     }
 
+    /**
+     *
+     * @param trasladarX
+     * @param trasladarY
+     */
     public void trasladarCentro(int trasladarX, int trasladarY){
         setCoordenadaX(getCoordenadaX() + trasladarX);
         setCoordenadaY(getCoordenadaY() + trasladarY);
