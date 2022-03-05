@@ -24,7 +24,7 @@ public class Aro {
         x=valorX;
     }
 
-    public int obterX() {
+    public int coordenadaX() {
         return x;
     }
 
@@ -32,7 +32,7 @@ public class Aro {
         y=valorY;
     }
 
-    public int obterY() {
+    public int coordenadaY() {
         return y;
     }
 
