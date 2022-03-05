@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         Aro circulo = new Aro(37,43,2.5);
         String saida =
-                "A coordenada X é "+circulo.coordenadaX()+
-                "\nA coordenada Y é "+circulo.coordenadaY()+
+                "A coordenada X é "+circulo.obterX()+
+                "\nA coordenada Y é "+circulo.obterY()+
                 "\nO radio é "+circulo.obterRadio();
         circulo.establecerX(35);
         circulo.establecerY(20);
