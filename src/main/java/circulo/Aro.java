@@ -19,56 +19,9 @@ public class Aro {
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
-        establecerRadio(valorRadio);
+        setRadio(valorRadio);
     }
-
-    public void establecerX(int valorX) {
-        setCoordenadaX(valorX);
-    }
-
-    public int obterX() {
-        return getCoordenadaX();
-    }
-
-    public void establecerY(int valorY) {
-        setCoordenadaY(valorY);
-    }
-
-    public int obterY() {
-        return getCoordenadaY();
-    }
-
-    public void establecerRadio(double valorRadio) {
-
-        setRadio(valorRadio < MINIMO ? MINIMO : valorRadio);
-    }
-
-    public double obterRadio() {
-        return getRadio();
-    }
-
-    public double obterDiametro() {
-        return getRadio() * 2;
-    }
-
-    public double obterCircunferencia() {
-        return Math.PI * obterDiametro();
-    }
-
-    public double obterSuperficie() {
-        return Math.PI * getRadio() * getRadio();
-    }
-
-    @Override
-    public String toString() {
-        return "Centro = [" + getCoordenadaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
-    }
-
-    public void trasladarCentro(int trasladarX, int trasladarY){
-        setCoordenadaX(getCoordenadaX() + trasladarX);
-        setCoordenadaY(getCoordenadaY() + trasladarY);
-    }
-
+    
     /**
      * @return the coordenadaX
      */
@@ -110,4 +63,27 @@ public class Aro {
     public void setRadio(double radio) {
         this.radio = radio;
     }
+
+    public double obterDiametro() {
+        return getRadio() * 2;
+    }
+
+    public double obterCircunferencia() {
+        return Math.PI * obterDiametro();
+    }
+
+    public double obterSuperficie() {
+        return Math.PI * getRadio() * getRadio();
+    }
+
+    @Override
+    public String toString() {
+        return "Centro = [" + getCoordenadaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
+    }
+
+    public void trasladarCentro(int trasladarX, int trasladarY){
+        setCoordenadaX(getCoordenadaX() + trasladarX);
+        setCoordenadaY(getCoordenadaY() + trasladarY);
+    }
+
 }
